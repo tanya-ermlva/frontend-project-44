@@ -14,7 +14,7 @@ const gameStructure = (introMessage, getGameData) => {
       console.log('Correct!');
     } else {
       console.log(`${userAnswer} is a wrong answer ;(. Correct answer was ${expectedAnswer}\nLet's try again, ${userName}`);
-      break;
+      return;
     }
   }
   console.log(`Congratulations, ${userName}!`);
