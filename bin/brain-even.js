@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 import gameStructure from '../src/index.js';
 import brainEvenGame from '../src/games/brain-even.js';
 
