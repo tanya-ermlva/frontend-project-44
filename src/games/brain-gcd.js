@@ -15,17 +15,6 @@ const getAllDivisors = (anyNumber) => {
   } return resultArr;
 };
 
-// const getArrayIntersections = (arr1, arr2) => {
-//   let result = [];
-//   for (const element1 of arr1) {
-//     for (const element2 of arr2) {
-//        if (element1 === element2) {
-//        result.push(element1);
-//        }
-//     }
-//   } return result;
-// };
-
 const getLargestArrayIntersection = (arr1, arr2) => {
   const result = [];
   let index1 = 0;

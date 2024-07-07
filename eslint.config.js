@@ -1,3 +1,4 @@
+
 import globals from "globals";
 
 import path from "path";
@@ -11,10 +12,10 @@ const __dirname = path.dirname(__filename);
 const compat = new FlatCompat({baseDirectory: __dirname, recommendedConfig: pluginJs.configs.recommended});
 
 export default [
-  ...compat.extends("airbnb"),
+  ...compat.extends("airbnb-base"),
   {
     languageOptions:{
-      globals: globals.browser 
+      globals: globals.node 
     },
     rules: {
       "no-console": "off", // Disables no-console rule
@@ -23,4 +24,3 @@ export default [
   },
  
 ];
-
