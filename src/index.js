@@ -4,7 +4,7 @@ import readlineSync from 'readline-sync';
 const gameStructure = (introMessage, getGameData) => {
   // welcoming user to the game
   const userName = readlineSync.question('Welcome to the Brain Games!\nMay I have your name? ');
-  console.log(`Hello, ${userName}! ${introMessage}`);
+  console.log(`Hello, ${userName}!\n${introMessage}`);
   // cycle of the game starts, particular game function is being called within the cycle body
   for (let i = 0; i < 3; i += 1) {
     // destructuring to get the game data from particular games
@@ -13,7 +13,7 @@ const gameStructure = (introMessage, getGameData) => {
     if (expectedAnswer === userAnswer) {
       console.log('Correct!');
     } else {
-      console.log(`${userAnswer} is a wrong answer ;(. Correct answer was ${expectedAnswer}\nLet's try again, ${userName}`);
+      console.log(`${userAnswer} is wrong answer ;(. Correct answer was ${expectedAnswer}\nLet's try again, ${userName}`);
       return;
     }
   }
