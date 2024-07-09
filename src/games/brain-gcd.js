@@ -35,7 +35,6 @@ const brainGcdGame = () => {
   const num1 = getRandomNumber(1, 50);
   const num2 = getRandomNumber(1, 50);
   const challenge = `${num1} ${num2}`;
-  //   getAllDivisors(num1);
   const arr1 = getAllDivisors(num1);
   const arr2 = getAllDivisors(num2);
   //   console.log(num1, num2);
