@@ -46,5 +46,6 @@ const brainGcdGame = () => {
 };
 
 export default brainGcdGame;
+export { getAllDivisors };
 
 // console.log(brainGcdGame());
