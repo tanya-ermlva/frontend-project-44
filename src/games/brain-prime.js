@@ -1,5 +1,6 @@
 import getRandomNumber from '../random-number.js';
 import getAllDivisors from '../all-divisors.js';
+import gameStructure from '../index.js';
 
 const isPrime = (number) => {
   const array = getAllDivisors(number);
@@ -15,6 +16,9 @@ const brainPrimeGame = () => {
   return [randomNumber, expectedAnswer];
 };
 
-// console.log(brainPrimeGame());
+const startBrainPrimeGame = () => {
+  const introMessage = 'Answer "yes" if given number is prime. Otherwise answer "no".';
+  gameStructure(introMessage, brainPrimeGame);
+};
 
-export default brainPrimeGame;
+export default startBrainPrimeGame;

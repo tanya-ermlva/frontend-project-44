@@ -1,5 +1,6 @@
 import getRandomNumber from '../random-number.js';
 import getAllDivisors from '../all-divisors.js';
+import gameStructure from '../index.js';
 
 const getLargestArrayIntersection = (arr1, arr2) => {
   const result = [];
@@ -31,7 +32,9 @@ const brainGcdGame = () => {
   return [challenge, expectedAnswer.toString()];
 };
 
-export default brainGcdGame;
-export { getAllDivisors };
+const startBrainGcdGame = () => {
+  const introMessage = 'Find the greatest common divisor of given numbers.';
+  gameStructure(introMessage, brainGcdGame);
+};
 
-// console.log(brainGcdGame());
+export default startBrainGcdGame;

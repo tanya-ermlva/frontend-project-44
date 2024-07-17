@@ -1,4 +1,5 @@
 import getRandomNumber from '../random-number.js';
+import gameStructure from '../index.js';
 
 const getRandomProgression = () => {
   const randomArray = [];
@@ -29,6 +30,9 @@ const brainProgressionGame = () => {
   return [challengeArray.join(' '), expectedAnswer.toString()];
 };
 
-export default brainProgressionGame;
+const startBrainProgressionGame = () => {
+  const introMessage = 'What number is missing in the progression?';
+  gameStructure(introMessage, brainProgressionGame);
+};
 
-// console.log(brainProgressionGame());
+export default startBrainProgressionGame;

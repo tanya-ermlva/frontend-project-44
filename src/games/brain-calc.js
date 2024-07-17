@@ -1,4 +1,5 @@
 import getRandomNumber from '../random-number.js';
+import gameStructure from '../index.js';
 
 const operationsArray = ['+', '-', '*'];
 
@@ -42,4 +43,9 @@ const brainCalcGame = () => {
   return [challenge, expectedAnswer];
 };
 
-export default brainCalcGame;
+const startBrainCalcGame = () => {
+  const introMessage = 'What is the result of the expression?';
+  gameStructure(introMessage, brainCalcGame);
+};
+
+export default startBrainCalcGame;
