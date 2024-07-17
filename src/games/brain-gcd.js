@@ -1,19 +1,5 @@
-import { getRandomNumber } from './brain-even.js';
-
-const getAllDivisors = (anyNumber) => {
-  let result = 0;
-  const resultArr = [];
-  let count = anyNumber;
-  while (count > 0) {
-    result = anyNumber % count;
-    if (result === 0) {
-      resultArr.push(count);
-      count -= 1;
-    } else {
-      count -= 1;
-    }
-  } return resultArr;
-};
+import getRandomNumber from '../random-number.js';
+import getAllDivisors from '../all-divisors.js';
 
 const getLargestArrayIntersection = (arr1, arr2) => {
   const result = [];

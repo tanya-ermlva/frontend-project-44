@@ -1,4 +1,4 @@
-import { getRandomNumber } from './brain-even.js';
+import getRandomNumber from '../random-number.js';
 
 const operationsArray = ['+', '-', '*'];
 

@@ -1,5 +1,5 @@
-import { getRandomNumber } from './brain-even.js';
-import { getAllDivisors } from './brain-gcd.js';
+import getRandomNumber from '../random-number.js';
+import getAllDivisors from '../all-divisors.js';
 
 const isPrime = (number) => {
   const array = getAllDivisors(number);
