@@ -7,9 +7,6 @@ const getRandomProgression = () => {
 
   const randomStep = getRandomNumber(1, 10);
   let startingRandomNumber = getRandomNumber(5, 100);
-
-  //   console.log(`the step: ${randomStep}, the starting point: ${startingRandomNumber}`);
-
   while (arrayLength < 10) {
     randomArray.push(startingRandomNumber);
     startingRandomNumber += randomStep;
@@ -21,11 +18,8 @@ const getRandomProgression = () => {
 
 const brainProgressionGame = () => {
   const challengeArray = getRandomProgression();
-  //   console.log(challengeArray);
   const replacedNumberInd = getRandomNumber(0, challengeArray.length);
-  //   console.log(replacedNumberInd);
   const expectedAnswer = challengeArray.slice(replacedNumberInd, replacedNumberInd + 1).toString();
-  //   console.log(expectedAnswer);
   challengeArray.splice(replacedNumberInd, 1, '..');
   return [challengeArray.join(' '), expectedAnswer.toString()];
 };
